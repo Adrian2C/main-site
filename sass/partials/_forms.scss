@@ -97,8 +97,6 @@
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  flex-wrap: nowrap;
-  border: 1px solid red;
 
   @media screen and (max-width:768px) {
     flex-direction: column;
