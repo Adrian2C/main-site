@@ -10,7 +10,7 @@ function sendEmail() {
 
 
   Email.send({
-    Host: "smtp.elasticemail.com",
+    Host: "s1.maildns.net",
     Username: 'adriancoceres.93@gmail.com',
     Password: "AB1FBCF73A2885303704F85279D4FC804BD8",
     To: 'adriancoceres.93@gmail.com',
