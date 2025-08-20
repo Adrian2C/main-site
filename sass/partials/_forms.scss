@@ -2,9 +2,9 @@
 
 .contact {
   background: ut.$color-1;
-  margin-top:3rem;
+  margin-top: 3rem;
 
-  form {
+  /* form {
     width: 600px;
     text-align: center;
 
@@ -12,6 +12,7 @@
       display: flex;
       flex-direction: column;
     }
+
     button {
       padding: 12px 32px;
       background: #0ef;
@@ -26,26 +27,31 @@
       cursor: pointer;
       margin-top: 20px;
       transition: 0.5s;
+
       &:hover {
         box-shadow: none;
       }
     }
+
     .textarea-field {
       .input {
         resize: none;
       }
+
       .error-txt {
         margin-top: -10px;
       }
     }
-    @media screen and(max-width:768px){
-      width:100%;
-      padding:0 20px;
-      transition:.3s ease-out;
+
+    @media screen and(max-width:768px) {
+      width: 100%;
+      padding: 0 20px;
+      transition: .3s ease-out;
     }
-  }
+  } */
 }
 
+/* 
 .field {
   .input {
     width: 100%;
@@ -58,11 +64,13 @@
     font-size: 16px;
     color: #ededed;
     margin: 12px 0;
+
     &::placeholder {
       color: rgba(255, 255, 255, 0.3);
       font-size: 20px;
     }
   }
+
   .error-txt {
     font-size: 14.5px;
     color: #d93025;
@@ -76,7 +84,59 @@
   .input {
     border-color: #d93025;
   }
+
   .error-txt {
     display: block;
+  }
+} */
+.contact-wrapper {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  flex-wrap: nowrap;
+  border: 1px solid red;
+
+  @media screen and (max-width:768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-img {
+    width: 50%;
+
+    @media screen and (max-width:768px) {
+      width: 100%;
+    }
+  }
+
+  .direct-contact-container {
+
+    align-content: center;
+    padding: 0 20px;
+
+    .contact-list {
+      list-style-type: none;
+      /* margin-left: -30px; */
+      /* padding-right: 20px; */
+
+      .list-item {
+        line-height: 4;
+        color: #aaa;
+
+        i:before {
+          font-size: 30px;
+          color: ut.$secondary-color;
+        }
+
+        .contact-text {
+          letter-spacing: 1.9px;
+          
+        }
+      }
+    }
   }
 }
